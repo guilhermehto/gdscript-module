@@ -1,7 +1,12 @@
 extends Node
 
-var age = 23
-var my_name = "Guilherme"
-var my_last_name = "Oliveira"
+var my_dogs_age = 15
+var my_cats_age = 5
+
 func _ready():
-	print(my_name + " " + my_last_name + " " + str(age))
+	if my_dogs_age >= 10 or my_cats_age >= 10:
+		print("They are elders")
+	elif my_dogs_age <= 1 or my_cats_age <= 1:
+		print("They are babies")
+	else:
+		print("They are adults")

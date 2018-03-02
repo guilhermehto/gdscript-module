@@ -8,11 +8,11 @@ var names_array = [my_name, my_friend_name, my_dogs_name]
 var ages_array = [50, 19, 10]
 
 func _ready():
-	for current_index in range(0, names_array.size()):
-		print(names_array[current_index] + " - " + str(ages_array[current_index]))
-		
-	for current_name in names_array:
-		print(current_name)
-	for current_age in ages_array:
-		print(current_age)
+	names_array.append("Frank")
+	print(names_array[names_array.size() - 1])
+	names_array.pop_back()
+	print(names_array[names_array.size() - 1])
+	print("First name before pop: " + names_array[0])
+	names_array.pop_front()
+	print("First name after pop: " + names_array[0])
 	

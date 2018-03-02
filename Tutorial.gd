@@ -1,15 +1,7 @@
 extends Node
 
-var test = 32
-var new_test = 10
+var age = 23
+var my_name = "Guilherme"
+var my_last_name = "Oliveira"
 func _ready():
-	print(test)
-	print(new_test)
-	test = test + new_test
-	print(test)
-	test = test * new_test
-	print(test)
-	test = test / new_test
-	print(test)
-	test = test - new_test
-	print(test)
+	print(my_name + " " + my_last_name + " " + str(age))

@@ -1,12 +1,18 @@
 extends Node
 
-var my_dogs_age = 15
-var my_cats_age = 5
+var my_name = "Keven"
+var my_friend_name = "Ana"
+var my_dogs_name = "Fluffy"
+
+var names_array = [my_name, my_friend_name, my_dogs_name]
+var ages_array = [50, 19, 10]
 
 func _ready():
-	if my_dogs_age >= 10 or my_cats_age >= 10:
-		print("They are elders")
-	elif my_dogs_age <= 1 or my_cats_age <= 1:
-		print("They are babies")
-	else:
-		print("They are adults")
+	for current_index in range(0, names_array.size()):
+		print(names_array[current_index] + " - " + str(ages_array[current_index]))
+		
+	for current_name in names_array:
+		print(current_name)
+	for current_age in ages_array:
+		print(current_age)
+	
